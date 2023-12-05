@@ -1453,6 +1453,91 @@
 		;;allow this faction to have a functioning family tree
 		"allow reproduction": true,
 	},
+	"legio_noctis":
+     	{
+        ;;name and description
+        "string":      "LEGIO_NOCTIS",
+        "description": "Legio Noctis",
+
+
+        ;;culture and (default?) character ethnicity
+        "culture":   "roman",
+        "ethnicity": "mediterranean",
+
+
+        ;;tags for faction groups
+        "tags": [ ],
+
+
+        ;;namelists
+        "namelists":
+        {
+            "men":      "romans_julii_men",
+            "women":    "roman_women",
+            "surnames": "romans_julii_surnames",
+        },
+
+
+        "logos":
+        {
+            ;;logo to use in the loading screens (seperate as sprite sheets aren't loaded at that point)
+            "loading screen icon": "data/ui/faction_icons/legio_noctis.tga",
+
+
+            ;;standard index as declared in descr_standards (4 per page)
+            "standard index":       9,
+            "rebel standard index": 25,
+
+
+            ;;logo index as declared in descr_sm_faction_logos (1 per page)
+            "logo index":       25,
+            "rebel logo index": 25,
+
+
+            ;;flag models to be used on the strat map when a settlement is unoccupied
+            "strat symbol model":       "data/models_strat/symbol_pontus.CAS",
+            "strat rebel symbol model": "data/models_strat/symbol_eastern_rebel.CAS",
+        },
+
+
+        ;;faction colours (some base game factions may have hardcoded overrides)
+        "colours":
+        {
+            "primary":   [  255,  0, 255, ],
+            "secondary": [ 0, 255,  255,  ],
+
+
+            "family tree":
+            {
+                "background":      [  255,  0,  255, ],
+                "font":            [  0, 0, 0, ],
+
+
+                "selected line":   [  255, 255, 255, ],
+                "unselected line": [  200, 187, 187, ],
+            },
+        },
+
+
+        "movies":
+        {
+            ;;movie to play when starting a campaign
+            "intro": "data/fmv/intros/eastern_intro_1080p.wmv",
+
+
+            ;;movie to play when this faction wins or is defeated, respectively
+            "victory": "data/fmv/victory/eastern_outro.wmv",
+            "defeat": "data/fmv/lose/pontus_eliminated.wmv",
+        },
+
+
+        "available in custom battles": true,
+        "prefer naval invasions": false,
+        "default battle ai personality": "default_personality",
+    
+        ;;allow this faction to have a functioning family tree
+        "allow reproduction": true,
+    },
 	"slave":
 	{
 		;;name and description
